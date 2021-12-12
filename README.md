@@ -19,4 +19,24 @@ $ brew install --cask ganache
 
 # Setup the Project
 $ truffle init
+
+# Compile Contracts
+$ truffle Compile
+
+# Deploy Smart Contracts to Blockchain
+$ truffle migrate
+
+# Check the Smart Contracts in Truffle Console
+$ truffle console
+
+$ todoList = await TodoList.deployed()
+$ todoList.address
+'0x4C5a2E7F9690c9DdB0f3F2Ab4cE2C122Cd6D6F98'
+
+$ todoList.taskCount()
+BN { negative: 0, words: [ 0, <1 empty item> ], length: 1, red: null }
+
+$ taskCount = await todoList.taskCount()
+$ taskCount.toNumber()
+0
 ```
